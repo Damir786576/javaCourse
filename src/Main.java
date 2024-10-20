@@ -69,12 +69,8 @@ public class Main {
     // find average salary
     public static double AverageSalary() {
         double totalSalary = TotalSalary();
-        int employeeCount = 0;
 
-        for (Employee employee : employees) {
-                employeeCount++;
-            }
-        return totalSalary / employeeCount;
+        return totalSalary / employees.length;
     }
 
     // write FullName all Employee
